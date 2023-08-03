@@ -1,8 +1,8 @@
+import React
 import {useState} from 'react';
 import './App.css';
 import Button from "./Components/Button";
 import Card from "./Components/Card";
-import React from 'react';
 
 function App() {
 
@@ -88,7 +88,7 @@ function App() {
 
   if(startFlag)
   {
-    qcards = 
+    qCards = 
     <div>
       {
         questionData.map((data) => 
@@ -101,16 +101,20 @@ function App() {
       }
     </div>
 
-    startBtn = <></>;
+    startBtn=<></>;
 
   }
   else
   {
-    startBtn = <Button onClick = {handleStart}>Start
+    startBtn = <Button onClick = {handleStart}>Start Quiz</Button>;
   }
   return (
         <div className="App">
-      
+        <h1>
+          Quizz App
+        </h1>
+        {qCards}
+        {startBtn}
     </div>
   );
 }
