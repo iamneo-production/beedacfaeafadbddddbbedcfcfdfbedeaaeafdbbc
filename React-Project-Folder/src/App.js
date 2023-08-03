@@ -89,6 +89,24 @@ function App() {
   if(startFlag)
   {
     qcards = 
+    <div>
+      {
+        questionData.map((data) => 
+        <Card question = {data.question} options = {{
+          option1 : data.options.option1,
+          option2 : data.options.option2,
+          option3 : data.options.option3,
+          option4 : data.options.option4,
+        }}></Card>)
+      }
+    </div>
+
+    startBtn = <></>;
+
+  }
+  else
+  {
+    startBtn = <Button onClick = {handleStart}>Start
   }
   return (
         <div className="App">
