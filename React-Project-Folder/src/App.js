@@ -1,5 +1,4 @@
-import React
-import {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Button from "./Components/Button";
 import Card from "./Components/Card";
