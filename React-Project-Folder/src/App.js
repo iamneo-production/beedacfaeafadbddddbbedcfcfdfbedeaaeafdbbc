@@ -10,7 +10,17 @@ function App() {
   var startBtn;
   var resultBtn;
 
-  const questionData = []
+  const questionData = [
+    {
+      key:1,
+      question:'Who is the father of the nation ?',
+
+      options:{
+        option1:'Mahatma Gandhi',
+        option2:'Jawaharlal Nehru',
+      }
+    }
+  ]
   return (
         <div className="App">
       
